@@ -304,8 +304,8 @@ class Corpus:
                 
             x['token'][n, :len(utterance)] = self.token_dict.toks2idxs(utterance)# using flair embeddings ::
 #             x['token'][n, :len(utterance)] = self.token_dict.toks2idxs(utterance)
-            utterance.pop()
-            utterance.append(".")
+          #  utterance.pop()
+           # utterance.append(".")
             x['wordindex'][n, :len(utterance)] = self.token_dict.toks2idxs(utterance)
 #             utterance.remove(".")
             
